@@ -7,5 +7,5 @@
  |_____|_|  |_|\_____|_|     \_____|
 ```
 
-Haskell and Python solutions to past problems from the
+Python solutions to past problems from the
 [Irish Collegiate Programming Contest (IrlCPC)](http://acm.ucc.ie/irlcpc)
