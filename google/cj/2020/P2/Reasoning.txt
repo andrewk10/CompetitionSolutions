@@ -1,0 +1,98 @@
+
+0 1 2 3 4 5 6
+-------------
+0 ( ( 2 ) 1 )
+
+
+Position 0 takes value 0 as: 
+ - There are 0 open parenthesis '(' unmatched in the substring of its left. 
+ - There are 0 closing parenthesis ')' unmatched in the substring of its right.
+
+Position 3 takes value 2 as: 
+ - There are 2 open parenthesis '(' unmatched in the substring of its left. 
+ - There are 2 closing parenthesis ')' unmatched in the substring of its right.
+ 
+Position 5 takes value 1 as: 
+ - There are 1 open parenthesis '(' unmatched in the substring of its left. 
+ - There are 1 closing parenthesis ')' unmatched in the substring of its right.
+
+
+
+0 1 2 3 4 5 6 7 8 9 10
+-----------------------
+( ( ( 3 ) ) 1 ( 2 ) )
+
+Position 3 takes value 3 as: 
+ - There are 3 open parenthesis '(' unmatched in the substring of its left. 
+ - There are 3 closing parenthesis ')' unmatched in the substring of its right.
+
+Position 6 takes value 1 as: 
+ - There are 1 open parenthesis '(' unmatched in the substring of its left. 
+ - There are 1 closing parenthesis ')' unmatched in the substring of its right.
+ 
+Position 8 takes value 2 as: 
+ - There are 2 open parenthesis '(' unmatched in the substring of its left. 
+ - There are 2 closing parenthesis ')' unmatched in the substring of its right.
+
+
+
+0 1 2 3 4 5 6 7 8 9 10 11 12
+----------------------------
+( ( 2 ) ) ( ( 2 ) ) (  1  )
+
+Position 2 takes value 2 as: 
+ - There are 2 open parenthesis '(' unmatched in the substring of its left. 
+ - There are 2 closing parenthesis ')' unmatched in the substring of its right.
+
+Position 7 takes value 2 as: 
+ - There are 2 open parenthesis '(' unmatched in the substring of its left. 
+ - There are 2 closing parenthesis ')' unmatched in the substring of its right.
+ 
+Position 11 takes value 1 as: 
+ - There are 1 open parenthesis '(' unmatched in the substring of its left. 
+ - There are 1 closing parenthesis ')' unmatched in the substring of its right.
+
+0 1 2 3 4 5 6
+-------------
+( ( 2 2 ) 1 )
+
+Position 2 takes value 2 as: 
+ - There are 2 open parenthesis '(' unmatched in the substring of its left. 
+ - There are 2 closing parenthesis ')' unmatched in the substring of its right.
+
+Position 3 takes value 2 as: 
+ - There are 2 open parenthesis '(' unmatched in the substring of its left. 
+ - There are 2 closing parenthesis ')' unmatched in the substring of its right.
+ 
+Position 5 takes value 1 as: 
+ - There are 1 open parenthesis '(' unmatched in the substring of its left. 
+ - There are 1 closing parenthesis ')' unmatched in the substring of its right.
+
+
+- If a number 1 is followed by a number 2, definitely an unmatched open parenthesis "(" has to appear in an index between the 1 and the 2. 
+- If a number 2 is followed by a number 1, definitely a matched closed parenthesis ")" has to appear in an index between the 2 and the 1. 
+
+
+In general, we can follow this plan: 
+
+# 1. We create the string before the first digit
+- Create digit[0] open parenthesis '('
+
+for i in range(len(digit)-1):
+   k = digit[i+1] - digit[i]
+   if k >= 0: 
+      create k open parenthesis '('
+   else:
+      create k close parenthesis ')'
+
+- Create digit[len(digit)-1] close parenthesis ')'
+
+
+
+
+
+
+
+
+
+
