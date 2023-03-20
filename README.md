@@ -8,4 +8,4 @@
 ```
 
 Python solutions to past problems from the
-[Irish Collegiate Programming Contest (IrlCPC)](http://acm.ucc.ie/irlcpc)
+[Irish Collegiate Programming Contest (IrlCPC)](https://acm.ucc.ie/)
