@@ -1,5 +1,5 @@
 # Solutions to Past Problems from Various Programming Competitions
-
+Here are the competitions we've solutions for;
 - [Google Coding Competitions](https://codingcompetitions.withgoogle.com/)
   - [Code Jam (RIP 2023)](https://codingcompetitions.withgoogle.com/codejam)
   - [Hash Code (RIP 2023)](https://codingcompetitions.withgoogle.com/hashcode)
@@ -8,14 +8,12 @@
 
 ## Supported Languages
 *Note: Not all solutions are given in every language listed, feel free to add solutions that are missing for certain languages.*
-
 - [Go](https://go.dev/)
 - [Haskell](https://www.haskell.org/)
 - [Python](https://www.python.org/)
 
 ## Credits
 Special thanks to the following contributors;
-
 - [jubobs](https://github.com/jubobs)
   - Haskell and Python solutions operating as the base fork for this project.
 - [IamCathal](https://github.com/IamCathal)
